@@ -876,3 +876,17 @@ func (es *Client) GetTaskLogCount(index, name, startTime, endTime string) (int, 
 	return int(count), nil
 }
 ```
+### Elastic操作
+#### Index
+#### Get
+#### Delete
+#### Delete By Query
+#### Update
+#### Update By Query
+#### Multi Get
+#### Bulk
+#### Reindex
+#### Term Vectors
+#### Multi Term Vectors
+#### ?Refresh
+#### Optimistic Concurrency Control
