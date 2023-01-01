@@ -17,12 +17,15 @@
 ## Service Mesh
 ## DDD架构
 ## Redis
+[Redis](https://github.com/heshaofeng1991/tools/tree/master/redis)<br>
 ## MySQL
 ## MongoDB
 ## PostgreSQL
 ## Kafka
+[Kafka](https://github.com/heshaofeng1991/tools/tree/master/kafka)<br>
 ## RabbitMQ
 ## ElasticSearch
+[ElasticSearch](https://github.com/heshaofeng1991/tools/tree/master/elasticsearch)<br>
 ## Jaeger(Jenkins)
 - Tracing
 ## Memcached
