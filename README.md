@@ -119,6 +119,7 @@
 ## LeeCode
 [华为机试](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E5%8D%8E%E4%B8%BA)<br>
 [LeeCode 每日一练](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83)<br>
+[LeeCode 字节](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E5%AD%97%E8%8A%82)<br>
 ## 区块链
 
     
