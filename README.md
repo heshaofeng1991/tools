@@ -6,6 +6,7 @@
 - Go工具类
 - Go Web服务实践（Gin,Beego,Echo,Chi,Iris,GoFrame,Martini,Go-Zero等）
 - Go 微服务实践（Go-Micro,Go-Kit,TP-Micro,GOA.Design,Go-Zero,Kratos等）
+  - [goa.design简单实践](https://github.com/heshaofeng1991/goa.design-practice) <br>
 - Go DDD项目实践（Domain-Driven-Design 领域驱动设计 combo项目就是一个简单的实践）
   - [combo -- DDD 简单实践](https://github.com/heshaofeng1991/tools/tree/master/combo)
 ## Web
