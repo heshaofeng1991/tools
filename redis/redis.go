@@ -10,12 +10,14 @@ import (
 func (r *Client) Get(ctx context.Context, key string) *redis.StringCmd {
 	cmd := r.Client.Get(ctx, key)
 	defer r.Client.Close()
+
 	return cmd
 }
 
 func (r *Client) Lock(name string, options ...redsync.Option) (mutex *redsync.Mutex, err error) {
 	mutex = r.Sync.NewMutex(name, options...)
 	err = mutex.Lock()
+
 	return
 }
 

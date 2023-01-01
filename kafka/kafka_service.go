@@ -9,7 +9,7 @@ import (
 	"sync"
 )
 
-// AsyncSend 异步发送
+// AsyncSend 异步发送.
 func (kc *Client) AsyncSend(topic string, msg string, keys ...string) {
 	producer := kc.asyncProducer
 
@@ -27,6 +27,7 @@ func (kc *Client) AsyncSend(topic string, msg string, keys ...string) {
 	return
 }
 
+// SyncSend 同步发送.
 func (kc *Client) SyncSend(topic string, msg string, keys ...string) (int32, int64, error) {
 	var key string
 	if len(keys) > 0 {
@@ -42,21 +43,21 @@ func (kc *Client) SyncSend(topic string, msg string, keys ...string) (int32, int
 	return partition, offset, errors.Wrap(err, "")
 }
 
-// Consumer 重写订阅者，并重写订阅者的所有方法
+// Consumer 重写订阅者，并重写订阅者的所有方法.
 type Consumer struct {
 	callback func(message *sarama.ConsumerMessage) (err error)
 	log      *log.Log
 	w        *sync.WaitGroup
 }
 
-// Setup 方法在新会话开始时运行的，然后才使用声明
+// Setup 方法在新会话开始时运行的，然后才使用声明.
 func (consumer *Consumer) Setup(sess sarama.ConsumerGroupSession) error {
 	consumer.w = &sync.WaitGroup{}
 
 	return nil
 }
 
-// Cleanup 一旦所有的订阅者协程都退出，Cleaup方法将在会话结束时运行
+// Cleanup 一旦所有的订阅者协程都退出，Cleaup方法将在会话结束时运行.
 func (consumer *Consumer) Cleanup(sarama.ConsumerGroupSession) error {
 	zap.S().Info("Cleanup")
 	consumer.w.Wait()
@@ -65,7 +66,7 @@ func (consumer *Consumer) Cleanup(sarama.ConsumerGroupSession) error {
 	return nil
 }
 
-// ConsumeClaim 订阅者在会话中消费消息，并标记当前消息已经被消费。
+// ConsumeClaim 订阅者在会话中消费消息，并标记当前消息已经被消费.
 func (consumer *Consumer) ConsumeClaim(session sarama.ConsumerGroupSession, claim sarama.ConsumerGroupClaim) error {
 	consumer.w.Add(1)
 	defer consumer.w.Done()
