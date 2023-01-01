@@ -58,7 +58,7 @@
 - proto-gen-gin
 - proto-gen-go-gin
 - proto-gen-go-grpc
-- proto-gen-go-http
+- [proto-gen-go-http](https://github.com/heshaofeng1991/protoc-gen-go-http)<br>
 - proto-gen-gogofaster
 - proto-gen-gofaster
 - proto-gen-govalidate
