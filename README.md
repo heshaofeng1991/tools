@@ -117,7 +117,7 @@
 - JSON To Go
 - Go Struct To JSON
 ## LeeCode
-[华为机试](https://github.com/heshaofeng1991/tools/tree/master/leecode)<br>
+[华为机试](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E5%8D%8E%E4%B8%BA)<br>
 [LeeCode 每日一练](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83)<br>
 ## 区块链
 
