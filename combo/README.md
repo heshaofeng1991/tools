@@ -33,7 +33,7 @@ Goa 是一个用于编写微服务的 Go 框架，它通过提供从服务器代
 ###### goa 项目代码生成（cmd/oms目录下不建议使用，仅供参考）
 cmd/oms目录下不建议使用说明 ： 目前项目的代码结构已趋于稳定，代码也遵循了golangci-lint规范，重新生成需要重新修改改变的文件
 
-goa example github.com/NextSmartShip/openapi/design
+goa example github.com/Test/openapi/design
 
 #### entgo
 
