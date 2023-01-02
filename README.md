@@ -8,7 +8,10 @@
 - Go 微服务实践（Go-Micro,Go-Kit,TP-Micro,GOA.Design,Go-Zero,Kratos等）
   - [goa.design简单实践](https://github.com/heshaofeng1991/goa.design-practice) <br>
 - Go DDD项目实践（Domain-Driven-Design 领域驱动设计 combo项目就是一个简单的实践）
-  - [combo -- DDD 简单实践](https://github.com/heshaofeng1991/tools/tree/master/combo)
+  - [combo -- DDD简单实践](https://github.com/heshaofeng1991/tools/tree/master/combo)
+  - [oms-backend -- DDD落地实践](https://github.com/heshaofeng1991/oms-backend) <br>
+  - [common -- 通用服务](https://github.com/heshaofeng1991/common) <br>
+  - [entgo -- go orm ent](https://github.com/heshaofeng1991/entgo) <br>
 ## Web
 - http
 - grpc
@@ -55,7 +58,7 @@
 - gorm(gorm.io)
 - xorm
 - sqlx
-- ent
+- [ent -- go orm ent实践](https://github.com/heshaofeng1991/entgo) <br>
 ## 代码生成
 - oapi-codegen
 - proto-gen-go
@@ -126,5 +129,7 @@
 [LeeCode 每日一练](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83)<br>
 [LeeCode 字节](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E5%AD%97%E8%8A%82)<br>
 ## 区块链
+## 其它
+- [common 通用服务公共代码](https://github.com/heshaofeng1991/common) <br>
 
     
