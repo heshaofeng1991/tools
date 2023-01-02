@@ -72,6 +72,7 @@
 - protoc-gen-go-swagger
 - proto
 - yaml
+- [ogen]()
 ## Filter
 ## Limiter
 ## Lua
