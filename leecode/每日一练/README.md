@@ -1,6 +1,6 @@
 # 每日一练
 
-[LeeCode 2351. 第一个出现两次的字母 ](https://leetcode.cn/problems/first-letter-to-appear-twice/)<br>
+[LeeCode 2351. 第一个出现两次的字母](https://leetcode.cn/problems/first-letter-to-appear-twice/)<br>
 ```go
 // 题解思路1：总共就26个字母，利用ASCII码表，统计每次字母字符出现的次数。
 
@@ -35,7 +35,7 @@ func repeatedCharacter(s string) byte {
 	return 0
 }
 ```
-[LeeCode 3. 无重复字符的最长子串 ](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)<br>
+[LeeCode 3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)<br>
 ```go
 func lengthOfLongestSubstring(s string) int {
 	res := 0
@@ -83,4 +83,8 @@ func lengthOfLongestSubstring2(s string) int {
 
 	return res
 }
+```
+[LeeCode 1801. 积压订单中的订单总数](https://leetcode.cn/problems/number-of-orders-in-the-backlog/)<br>
+```go
+
 ```
