@@ -8,10 +8,14 @@
 - Go 微服务实践（Go-Micro,Go-Kit,TP-Micro,GOA.Design,Go-Zero,Kratos等）
   - [goa.design简单实践](https://github.com/heshaofeng1991/goa.design-practice) <br>
 - Go DDD项目实践（Domain-Driven-Design 领域驱动设计 combo项目就是一个简单的实践）
-  - [combo -- DDD简单实践](https://github.com/heshaofeng1991/tools/tree/master/combo)
+  - [combo -- DDD简单实践](https://github.com/heshaofeng1991/tools/tree/master/combo) <br>
   - [oms-backend -- DDD落地实践](https://github.com/heshaofeng1991/oms-backend) <br>
   - [common -- 通用服务](https://github.com/heshaofeng1991/common) <br>
   - [entgo -- go orm ent](https://github.com/heshaofeng1991/entgo) <br>
+  - [api-documention 用于展示生成的swagger.yml文件](https://github.com/heshaofeng1991/api-documentation) <br>
+  ```text
+  https://heshaofeng1991.github.io/api-documentation/
+  ```
 ## Web
 - http
 - grpc
@@ -60,7 +64,9 @@
 - sqlx
 - [ent -- go orm ent实践](https://github.com/heshaofeng1991/entgo) <br>
 ## 代码生成
-- oapi-codegen
+- oapi-codegen <br>
+  - [oms-backend](https://github.com/heshaofeng1991/oms-backend) <br>
+  - [combo](https://github.com/heshaofeng1991/tools/tree/master/combo) <br>
 - proto-gen-go
 - proto-gen-gin
 - proto-gen-go-gin
