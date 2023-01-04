@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"admin/global"
-	"airmart-core/initialize"
+	"core/initialize"
 )
 
 var Services *initialize.Services

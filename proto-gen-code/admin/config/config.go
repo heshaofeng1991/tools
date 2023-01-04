@@ -1,7 +1,7 @@
 package config
 
 import (
-	types "airmart-core/config"
+	types "core/config"
 )
 
 type Config struct {

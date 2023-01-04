@@ -3,8 +3,8 @@ package main
 import (
 	"admin/global"
 	"admin/router"
-	"airmart-core/common"
-	"airmart-core/initialize"
+	"core/common"
+	"core/initialize"
 	"log"
 )
 

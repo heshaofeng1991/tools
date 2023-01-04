@@ -1,12 +1,12 @@
 package service
 
 import (
-	"airmart-core/types"
 	"context"
+	"core/types"
 
 	"admin/global"
 	"admin/model"
-	"airmart-core/common"
+	"core/common"
 	pb "proto/admin"
 )
 

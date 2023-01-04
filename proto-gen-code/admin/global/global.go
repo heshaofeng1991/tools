@@ -1,8 +1,8 @@
 package global
 
 import (
-	conf "airmart-core/config"
-	"airmart-core/initialize"
+	conf "core/config"
+	"core/initialize"
 )
 
 type config struct {

@@ -1,4 +1,4 @@
-syntax = "proto3";
+ syntax = "proto3";
 
 // 指定golang包名
 option go_package = "./;admin";

@@ -2,8 +2,8 @@ package router
 
 import (
 	"admin/handler"
-	common "airmart-core/common/router"
-	middle "airmart-core/middlewares/api"
+	common "core/common/router"
+	middle "core/middlewares/api"
 	"proto/admin"
 
 	"github.com/gin-gonic/gin"
