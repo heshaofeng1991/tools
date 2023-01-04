@@ -86,5 +86,123 @@ func lengthOfLongestSubstring2(s string) int {
 ```
 [LeeCode 1801. 积压订单中的订单总数](https://leetcode.cn/problems/number-of-orders-in-the-backlog/)<br>
 ```go
+type pair struct{ price, left int }
+type buy []pair
 
+func (h buy) Len() int            { return len(h) }
+func (h buy) Less(i, j int) bool  { return h[i].price > h[j].price }
+func (h buy) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
+func (h *buy) Push(v interface{}) { *h = append(*h, v.(pair)) }
+func (h *buy) Pop() interface{}   { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1]; return v }
+
+type sell []pair
+
+func (h sell) Len() int            { return len(h) }
+func (h sell) Less(i, j int) bool  { return h[i].price < h[j].price }
+func (h sell) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
+func (h *sell) Push(v interface{}) { *h = append(*h, v.(pair)) }
+func (h *sell) Pop() interface{}   { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1]; return v }
+
+const MOD = 1e9 + 7
+
+func getNumberOfBacklogOrders(orders [][]int) (ans int) {
+	buyOrders, sellOrders := buy{}, sell{}
+
+	for _, ord := range orders {
+		price, amount := ord[0], ord[1]
+
+		if ord[2] == 0 {
+			for amount > 0 && len(sellOrders) > 0 && sellOrders[0].price <= price {
+				if sellOrders[0].left > amount {
+					sellOrders[0].left -= amount
+					amount = 0
+
+					break
+				}
+
+				amount -= heap.Pop(&sellOrders).(pair).left
+			}
+
+			if amount > 0 {
+				heap.Push(&buyOrders, pair{price, amount})
+			}
+		} else {
+			for amount > 0 && len(buyOrders) > 0 && buyOrders[0].price >= price {
+				if buyOrders[0].left > amount {
+					buyOrders[0].left -= amount
+					amount = 0
+
+					break
+				}
+
+				amount -= heap.Pop(&buyOrders).(pair).left
+			}
+
+			if amount > 0 {
+				heap.Push(&sellOrders, pair{price, amount})
+			}
+		}
+	}
+
+	for _, p := range buyOrders {
+		ans += p.left
+	}
+
+	for _, p := range sellOrders {
+		ans += p.left
+	}
+
+	return ans % MOD
+}
+```
+
+[LeeCode 2042. 检查句子中的数字是否递增](https://leetcode.cn/problems/check-if-numbers-are-ascending-in-a-sentence/)<br>
+```go
+func areNumbersAscending(s string) bool {
+	str := make([]string, 0)
+	res := make([]int, 0)
+
+	str = strings.Split(s, " ")
+
+	for i := 0; i <= len(str)-1; i++ {
+		if str[i] == "0" {
+			val, _ := strconv.Atoi(str[i])
+
+			res = append(res, val)
+
+			continue
+		}
+
+		val, err := strconv.Atoi(str[i])
+		if err != nil {
+			continue
+		}
+
+		res = append(res, val)
+	}
+
+	if len(res) == 0 {
+		return false
+	}
+
+	if containsDuplicate(res) {
+		return false
+	}
+
+	return sort.IntsAreSorted(res)
+}
+
+func containsDuplicate(nums []int) bool {
+	mp := make(map[int]bool)
+
+	for _, v := range nums {
+		if _, ok := mp[v]; ok {
+			return true
+		}
+
+		mp[v] = false
+	}
+
+	return false
+}
 ```
