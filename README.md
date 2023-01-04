@@ -10,6 +10,7 @@
 - Go DDD项目实践（Domain-Driven-Design 领域驱动设计 combo项目就是一个简单的实践）
   - [combo -- DDD简单实践](https://github.com/heshaofeng1991/tools/tree/master/combo) <br>
   - [oms-backend -- DDD落地实践](https://github.com/heshaofeng1991/oms-backend) <br>
+  - [logistics-backend -- DDD落地实践 ](https://github.com/heshaofeng1991/logistics-backend) <br>
   - [common -- 通用服务](https://github.com/heshaofeng1991/common) <br>
   - [entgo -- go orm ent](https://github.com/heshaofeng1991/entgo) <br>
   - [api-documention 用于展示生成的swagger.yml文件](https://github.com/heshaofeng1991/api-documentation) <br>
@@ -67,18 +68,27 @@
 - oapi-codegen <br>
   - [oms-backend](https://github.com/heshaofeng1991/oms-backend) <br>
   - [combo](https://github.com/heshaofeng1991/tools/tree/master/combo) <br>
+  - [logistics-backend](https://github.com/heshaofeng1991/logistics-backend) <br>
+- generate golang code
+  - [proto-gen-code](https://github.com/heshaofeng1991/proto-gen-code) <br>
+  - 用到的protoc工具
+    - `proto-gen-go`
+    - `proto-gen-go-grpc`
+    - `proto-gen-go-http`
+    - `proto-gen-gogofaster`
+    - `proto-gen-govalidators`
 - proto-gen-go
-- proto-gen-gin
-- proto-gen-go-gin
 - proto-gen-go-grpc
-- [proto-gen-go-http](https://github.com/heshaofeng1991/protoc-gen-go-http)<br>
 - proto-gen-gogofaster
+- proto-gen-govalidators
+- [proto-gen-go-http](https://github.com/heshaofeng1991/protoc-gen-go-http)<br>
 - proto-gen-gofaster
 - proto-gen-govalidate
-- proto-gen-govalidators
 - proto-gen-micro
 - protoc-gen-go-errors
 - protoc-gen-go-swagger
+- proto-gen-gin
+- proto-gen-go-gin
 - proto
 - yaml
 - [ogen](https://github.com/heshaofeng1991/tools/tree/master/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/ogen) <br>
@@ -137,5 +147,24 @@
 ## 区块链
 ## 其它
 - [common 通用服务公共代码](https://github.com/heshaofeng1991/common) <br>
+- [core](https://github.com/heshaofeng1991/core) <br>
+  - 服务注册与发现
+  - http
+  - grpc
+  - auth(jwt)
+  - middleware
+    - kafka
+    - redis
+    - mysql
+    - logger
+    - oss
+    - jaeger
+    - config
+    - nacos
+    - elasticsearch
+  - errors
+  - response
+- [pay](https://github.com/heshaofeng1991/pay-service) <br>
+  - 工厂模式实现支持多种支付（简单demo） 
 
     
