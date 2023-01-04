@@ -1,0 +1,53 @@
+nacos:
+  host: ''
+  port: 0
+  namespace: ''
+  user: ''
+  password: ''
+  dataid: ''
+  group: ''
+  cluster: ""
+  open: false
+service:
+  name: ''
+  metadata:
+  host: ''
+  port: 9050
+  group: ''
+  cluster: ''
+  checkAddr: '/check'
+  namespace: ''
+consul:
+  id: ""
+  host: ''
+jaeger:
+  host: ''
+  port: ""
+mysql:
+  host: '127.0.0.1'
+  port: "3306"
+  user: 'root'
+  name: 'test'
+  password: 'root'
+  prefix: ''
+redis:
+  host: '127.0.0.1'
+  port: "6379"
+  password: ''
+  db: 0
+jwt:
+  key: ''
+  expires:
+kafka:
+  address:
+    - 127.0.0.1:9092
+    - 127.0.0.1:9091
+  username: ""
+  password: ""
+logs:
+  filename: ""
+oss:
+  endpoint: ''
+  bucket: ''
+  id: ''
+  secret: ''

@@ -1,0 +1,147 @@
+syntax = "proto3";
+
+// 指定golang包名
+option go_package = "./;admin";
+
+import "github.com/gogo/protobuf@v1.3.2/gogoproto/gogo.proto";
+import "github.com/mwitkow/go-proto-validators@v0.3.2/validator.proto";
+import "google/api/annotations.proto";
+import "google/protobuf/timestamp.proto";
+
+package admin;
+
+service Admin {
+  // 创建发行方商品.
+  rpc CreateBrand(CreateBrandReq)returns (CreateBrandRsp) {
+    option (google.api.http) = {
+      post: "/v1/admin/brand_manager/create",
+      body: "*",
+    };
+  }
+
+  // 编辑发行方商品.
+  rpc UpdateBrand(UpdateBrandReq) returns (CommonRsp) {
+    option (google.api.http) = {
+      post: "/v1/admin/brand_manager/edit"
+      body: "*"
+    };
+  }
+
+  // 基于发行方商品ID查询发行方商品详情.
+  rpc GetBrandByID(GetBrandByIDReq) returns (GetBrandByIDRsp) {
+    option (google.api.http) = {
+      get: "/v1/admin/brand_manager/get/{brand_id}"
+    };
+  }
+
+  // 批量查询发行方商品数据.
+  rpc MultiGetBrand(MultiGetBrandReq) returns (MultiGetBrandRsp) {
+    option (google.api.http) = {
+      get: "/v1/admin/brand_manager/bulk_get"
+    };
+  }
+
+  // 删除发行方商品.
+  rpc RemoveBrand(RemoveBrandReq) returns (CommonRsp) {
+    option (google.api.http) = {
+      post: "/v1/admin/brand_manager/remove"
+      body: "*"
+    };
+  }
+}
+
+// 通用返回结构。
+message CommonRsp {
+  int64 code = 1 [(gogoproto.jsontag) = "code"];
+  string desc = 2 [(gogoproto.jsontag) = "desc"];
+  Empty data = 3 [(gogoproto.jsontag) = "data"];
+}
+
+// 空结构体。
+message Empty{}
+
+// 创建商品品牌请求结构。
+message CreateBrandReq {
+  string name = 1 [(validator.field) = {string_not_empty: true,length_lt:255}];
+  string cover_url = 2 [(validator.field) = {string_not_empty: true,length_lt:255}];
+  int32 sort_order = 3 [(validator.field) = {int_gt: 0}];
+  int64 created_by = 4 [(validator.field) = {int_gt: 0}];
+  int64 updated_by = 5 [(validator.field) = {int_gt: 0}];
+  string remark = 6 [(validator.field) = {string_not_empty: true,length_lt:255}];
+}
+
+// 创建商品品牌返回结构。
+message CreateBrandRsp {
+  int64 code = 1 [(gogoproto.jsontag) = "code"];
+  string desc = 2 [(gogoproto.jsontag) = "desc"];
+  CreateBrandData data = 3 [(gogoproto.jsontag) = "data"];
+}
+
+// 创建商品品牌data结构。
+message CreateBrandData {
+  int64 id = 1;
+}
+
+// 编辑商品品牌请求结构。
+message UpdateBrandReq {
+  string name = 1 [(validator.field) = {string_not_empty: true,length_lt:255}];
+  string cover_url = 2 [(validator.field) = {string_not_empty: true,length_lt:255}];
+  int32 sort_order = 3 [(validator.field) = {int_gt: 0}];
+  int64 created_by = 4 [(validator.field) = {int_gt: 0}];
+  int64 updated_by = 5 [(validator.field) = {int_gt: 0}];
+  string remark = 6 [(validator.field) = {string_not_empty: true,length_lt:255}];
+  int32 delete_flag = 7;
+}
+
+message GetBrandByIDReq {
+  int64 brand_id = 1 [(validator.field) = {int_gt: 0}];
+}
+
+message GetBrandByIDRsp {
+  int64 id = 1;
+  string name = 2;
+  string cover_url = 3;
+  int32 sort_order = 4;
+  int64 created_by = 5;
+  int64 updated_by = 6;
+  string remark = 7;
+  int32 delete_flag = 8;
+  google.protobuf.Timestamp created_time = 9 [(gogoproto.jsontag) = 'created_time', (gogoproto.stdtime) = true];
+  google.protobuf.Timestamp updated_time = 10 [(gogoproto.jsontag) = 'updated_time', (gogoproto.stdtime) = true];
+}
+
+message MultiGetBrandReq {
+  int32 page = 1 [(validator.field) = {int_gt: 0}];
+  int32 page_size = 2 [(validator.field) = {int_gt: 0}];
+  string name = 3 [(validator.field) = {string_not_empty: true,length_lt:255}];
+  google.protobuf.Timestamp start_time = 4 [(gogoproto.jsontag) = 'start_time', (gogoproto.stdtime) = true];
+  google.protobuf.Timestamp end_time = 5 [(gogoproto.jsontag) = 'end_time', (gogoproto.stdtime) = true];
+}
+
+message MultiGetBrandRsp {
+  int64 code = 1 [(gogoproto.jsontag) = "code"];
+  string desc = 2 [(gogoproto.jsontag) = "desc"];
+  MultiGetBrandData data = 3 [(gogoproto.jsontag) = "data"];
+}
+
+message MultiGetBrandData{
+  repeated  MultiGetBrandContent list = 1 [(gogoproto.jsontag) = "list"];
+  int64 total = 2 [(gogoproto.jsontag) = "total"];
+}
+
+message MultiGetBrandContent {
+  int64 id = 1;
+  string name = 2;
+  string cover_url = 3;
+  int32 sort_order = 4;
+  int64 created_by = 5;
+  int64 updated_by = 6;
+  string remark = 7;
+  int32 delete_flag = 8;
+  google.protobuf.Timestamp created_time = 9 [(gogoproto.jsontag) = 'created_time', (gogoproto.stdtime) = true];
+  google.protobuf.Timestamp updated_time = 10 [(gogoproto.jsontag) = 'updated_time', (gogoproto.stdtime) = true];
+}
+
+message RemoveBrandReq {
+  int64 brand_id = 1 [(validator.field) = {int_gt: 0}];
+}
