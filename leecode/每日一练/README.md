@@ -211,7 +211,7 @@ func containsDuplicate(nums []int) bool {
 }
 ```
 [1802. 有界数组中指定下标处的最大值](https://leetcode.cn/problems/maximum-value-at-a-given-index-in-a-bounded-array/)<br>
-- [有界数组中指定下标处的最大值 maxValue.go]()<br>
+- [有界数组中指定下标处的最大值 maxValue.go](https://github.com/heshaofeng1991/tools/blob/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83/maxValue.go)<br>
 ```go
 func maxValue(n int, index int, maxSum int) int {
 	sum := func(x, cnt int) int {
@@ -231,8 +231,9 @@ func maxValue(n int, index int, maxSum int) int {
 }
 ```
 [1803. 统计异或值在范围内的数对有多少](https://leetcode.cn/problems/count-pairs-with-xor-in-a-range/) <br>
- - [countPairs]()<br>
+ - [countPairs](https://github.com/heshaofeng1991/tools/blob/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83/countPairs.go)<br>
 ```go
+// 超出时间限制
 func countPairs(nums []int, low int, high int) int {
 	length := len(nums)
 	i, j, x, result := 0, 0, 0, 0
@@ -249,5 +250,4 @@ func countPairs(nums []int, low int, high int) int {
 
 	return result
 }
-
 ```
