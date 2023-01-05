@@ -1,12 +1,13 @@
 # Johnnysfhe Tools
 ## 项目结构
 - [api-documentation](https://github.com/heshaofeng1991/api-documentation)<br>
-- [combo](https://github.com/heshaofeng1991/combo)<br>
 - [common](https://github.com/heshaofeng1991/common)<br>
 - [core](https://github.com/heshaofeng1991/core)<br>
 - [ddd-example](https://github.com/heshaofeng1991/ddd-example)<br>
 - [ddd-sample](https://github.com/heshaofeng1991/ddd-sample)<br>
 - [elasticsearch](https://github.com/heshaofeng1991/elasticsearch)<br>
+- [goa.design-practice](https://github.com/heshaofeng1991/goa.design-practice)<br>
+- [goa.design-project](https://github.com/heshaofeng1991/goa.design-project)<br>
 - [kafka](https://github.com/heshaofeng1991/kafka)<br>
 - [leecode](https://github.com/heshaofeng1991/leecode)<br>
 - [orm]()<br>
@@ -31,8 +32,8 @@
 - Go Web服务实践（Gin,Beego,Echo,Chi,Iris,GoFrame,Martini,Go-Zero等）
 - Go 微服务实践（Go-Micro,Go-Kit,TP-Micro,GOA.Design,Go-Zero,Kratos等）
   - [goa.design简单实践](https://github.com/heshaofeng1991/goa.design-practice) <br>
-- Go DDD项目实践（Domain-Driven-Design 领域驱动设计 combo项目就是一个简单的实践）
-  - [combo -- DDD简单实践](https://github.com/heshaofeng1991/tools/tree/master/combo) <br>
+- Go DDD项目实践（Domain-Driven-Design 领域驱动设计 goa.design-project项目就是一个简单的实践）
+  - [goa.design-project -- DDD简单实践](https://github.com/heshaofeng1991/tools/tree/master/goa.design-project) <br>
   - [ddd-example -- DDD落地实践](https://github.com/heshaofeng1991/ddd-example) <br>
   - [ddd-sample -- DDD落地实践 ](https://github.com/heshaofeng1991/ddd-sample) <br>
   - [common -- 通用服务](https://github.com/heshaofeng1991/common) <br>
@@ -91,7 +92,7 @@
 ## 代码生成
 - oapi-codegen <br>
   - [ddd-example](https://github.com/heshaofeng1991/ddd-example) <br>
-  - [combo](https://github.com/heshaofeng1991/tools/tree/master/combo) <br>
+  - [goa.design-project](https://github.com/heshaofeng1991/tools/tree/master/goa.design-project) <br>
   - [ddd-sample](https://github.com/heshaofeng1991/ddd-sample) <br>
 - generate golang code
   - [proto-gen-code](https://github.com/heshaofeng1991/proto-gen-code) <br>
