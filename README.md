@@ -167,15 +167,17 @@
 - Excel
 - PDF
 - [Golang便利工具](https://printlove.cn/tools)<br>
-- [SQL To EntGo](https://github.com/miaogaolin/sql2ent)<br>
-- SQL To Gorm
-- SQL To Go-Zero
-- SQL To MongoDB
-- SQL To ElasticSearch
-- XML To Go
-- YAML To Go
-- JSON To Go
-- Go Struct To JSON
+  - [在线工具：YAML转Go Struct](https://printlove.cn/tools/yaml2go)<br>
+  - [在线工具：SQL转ElasticSearch DSL](https://printlove.cn/tools/sql2es)<br>
+  - [在线工具：XML转JSON](https://printlove.cn/tools/xml2json)<br>
+  - [在线工具：JSON转Golang Struct](https://printlove.cn/tools/json2go)<br>
+  - [在线工具：SQL转entgo schema](https://printlove.cn/tools/sql2ent)<br>
+  - [在线工具：SQL转go-zero Model](https://printlove.cn/tools/sql2gozero)<br>
+  - [在线工具：SQL转GORM Model](https://printlove.cn/tools/sql2gorm)<br>
+  - [在线工具：SQL转MongoDB](https://printlove.cn/tools/sql2mongodb)<br>
+  - [在线工具：XML To Go]()<br>
+  - [在线工具：Go Struct To JSON]()<br>
+
 ## LeeCode
 - [华为机试](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E5%8D%8E%E4%B8%BA)<br>
 - [LeeCode 每日一练](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83)<br>
