@@ -9,8 +9,8 @@
   - [goa.design简单实践](https://github.com/heshaofeng1991/goa.design-practice) <br>
 - Go DDD项目实践（Domain-Driven-Design 领域驱动设计 combo项目就是一个简单的实践）
   - [combo -- DDD简单实践](https://github.com/heshaofeng1991/tools/tree/master/combo) <br>
-  - [oms-backend -- DDD落地实践](https://github.com/heshaofeng1991/oms-backend) <br>
-  - [logistics-backend -- DDD落地实践 ](https://github.com/heshaofeng1991/logistics-backend) <br>
+  - [ddd-example -- DDD落地实践](https://github.com/heshaofeng1991/ddd-example) <br>
+  - [ddd-sample -- DDD落地实践 ](https://github.com/heshaofeng1991/ddd-sample) <br>
   - [common -- 通用服务](https://github.com/heshaofeng1991/common) <br>
   - [entgo -- go orm ent](https://github.com/heshaofeng1991/entgo) <br>
   - [api-documention 用于展示生成的swagger.yml文件](https://github.com/heshaofeng1991/api-documentation) <br>
@@ -66,9 +66,9 @@
 - [ent -- go orm ent实践](https://github.com/heshaofeng1991/entgo) <br>
 ## 代码生成
 - oapi-codegen <br>
-  - [oms-backend](https://github.com/heshaofeng1991/oms-backend) <br>
+  - [ddd-example](https://github.com/heshaofeng1991/ddd-example) <br>
   - [combo](https://github.com/heshaofeng1991/tools/tree/master/combo) <br>
-  - [logistics-backend](https://github.com/heshaofeng1991/logistics-backend) <br>
+  - [ddd-sample](https://github.com/heshaofeng1991/ddd-sample) <br>
 - generate golang code
   - [proto-gen-code](https://github.com/heshaofeng1991/proto-gen-code) <br>
   - 用到的protoc工具
