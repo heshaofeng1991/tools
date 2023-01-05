@@ -250,4 +250,33 @@ func countPairs(nums []int, low int, high int) int {
 
 	return result
 }
+
+func countPairs2(nums []int, low, high int) (ans int) {
+    arr := make(map[int]int, 0)
+    
+    for _, val := range nums {
+        arr[val]++
+    }
+    
+    for high++; high > 0; high >>= 1 {
+		result := make(map[int]int, 0)
+    
+        for x, c := range arr {
+            if high&1 > 0 {
+                ans += c * arr[x^(high-1)]
+            }
+    
+            if low&1 > 0 {
+                ans -= c * arr[x^(low-1)]
+            }
+    
+            result[x>>1] += c
+		}
+    
+        arr = result
+        low >>= 1
+    }
+    
+    return ans / 2
+}
 ```
