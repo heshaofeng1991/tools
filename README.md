@@ -31,9 +31,10 @@
 - Go工具类
 - Go Web服务实践（Gin,Beego,Echo,Chi,Iris,GoFrame,Martini,Go-Zero等）
 - Go 微服务实践（Go-Micro,Go-Kit,TP-Micro,GOA.Design,Go-Zero,Kratos等）
+  - [goa](https://github.com/heshaofeng1991/ddd-goa-ent-project) <br>
   - [goa.design简单实践](https://github.com/heshaofeng1991/goa.design-practice) <br>
 - Go DDD项目实践（Domain-Driven-Design 领域驱动设计 ddd-goa-ent-project项目就是一个简单的实践）
-  - [ddd-goa-ent-project -- DDD简单实践](https://github.com/heshaofeng1991/tools/tree/master/ddd-goa-ent-project) <br>
+  - [ddd-goa-ent-project](https://github.com/heshaofeng1991/ddd-goa-ent-project) <br>
   - [ddd-example -- DDD落地实践](https://github.com/heshaofeng1991/ddd-example) <br>
   - [ddd-sample -- DDD落地实践 ](https://github.com/heshaofeng1991/ddd-sample) <br>
   - [common -- 通用服务](https://github.com/heshaofeng1991/common) <br>
@@ -50,6 +51,14 @@
 ## 微服务架构
 ## Service Mesh
 ## DDD架构
+- [DDD](https://domain-driven-design.org/zh/ddd-concept-reference.html)<br>
+- [ddd-example -- DDD落地实践](https://github.com/heshaofeng1991/ddd-example) <br>
+- [ddd-sample -- DDD落地实践 ](https://github.com/heshaofeng1991/ddd-sample) <br>
+- [ddd-goa-ent-project](https://github.com/heshaofeng1991/ddd-goa-ent-project) <br>
+### GOA
+- [goa](https://goa.design/)<br>
+### ENT
+- [ent](https://entgo.io/)<br>
 ## Redis
 [Redis](https://github.com/heshaofeng1991/tools/tree/master/redis)<br>
 ## MySQL
@@ -84,15 +93,15 @@
 ## Auth
 - jwt
 ## ORM
-- gorm(jinzhu)
-- gorm(gorm.io)
-- xorm
-- sqlx
+- [gorm(jinzhu)](https://v1.gorm.io/) <br>
+- [gorm(gorm.io)](https://gorm.io/) <br>
+- [xorm](https://xorm.io/) <br>
+- [sqlx](http://jmoiron.github.io/sqlx/) <br>
 - [ent -- go orm ent实践](https://github.com/heshaofeng1991/entgo) <br>
+  - [ent资料链接](https://entgo.io/)<br>
 ## 代码生成
 - oapi-codegen <br>
   - [ddd-example](https://github.com/heshaofeng1991/ddd-example) <br>
-  - [ddd-goa-ent-project](https://github.com/heshaofeng1991/tools/tree/master/ddd-goa-ent-project) <br>
   - [ddd-sample](https://github.com/heshaofeng1991/ddd-sample) <br>
 - generate golang code
   - [proto-gen-code](https://github.com/heshaofeng1991/proto-gen-code) <br>
@@ -114,7 +123,8 @@
 - protoc-gen-go-swagger
 - proto-gen-gin
 - proto-gen-go-gin
-- proto
+- [proto]()<br>
+  - [ddd-goa-ent-project](https://github.com/heshaofeng1991/ddd-goa-ent-project) <br> 
 - yaml
 - [ogen](https://github.com/heshaofeng1991/tools/tree/master/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/ogen) <br>
 ## Filter
@@ -156,7 +166,8 @@
 ## 其它工具
 - Excel
 - PDF
-- SQL To Entgo
+- [Golang便利工具](https://printlove.cn/tools)<br>
+- [SQL To EntGo](https://github.com/miaogaolin/sql2ent)<br>
 - SQL To Gorm
 - SQL To Go-Zero
 - SQL To MongoDB
