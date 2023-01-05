@@ -1,6 +1,7 @@
 # 字节
 
-[LeeCode 1. 两数之和 ](https://leetcode.cn/problems/two-sum/)<br>
+[LeeCode 1. 两数之和](https://leetcode.cn/problems/two-sum/)<br>
+- [两数之和 twoSum.go](https://github.com/heshaofeng1991/tools/blob/master/leecode/%E5%AD%97%E8%8A%82/twoSums.go)<br>
 ```go
 /*
 暴力枚举
@@ -51,7 +52,8 @@ func twoSum2(nums []int, target int) []int {
 	return result
 }
 ```
-[LeeCode 4. 寻找两个正序数组的中位数 ](https://leetcode.cn/problems/median-of-two-sorted-arrays/)<br>
+[LeeCode 4. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/)<br>
+- [寻找两个正序数组的中位数 findMedianSortedArrays.go](https://github.com/heshaofeng1991/tools/blob/master/leecode/%E5%AD%97%E8%8A%82/findMedianSortedArrays.go)<br>
 ```go
 /*
 题解1：

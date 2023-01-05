@@ -1,6 +1,7 @@
 # 每日一练
 
 [LeeCode 2351. 第一个出现两次的字母](https://leetcode.cn/problems/first-letter-to-appear-twice/)<br>
+- [第一个出现两次的字母 repeatedCharacter.go](https://github.com/heshaofeng1991/tools/blob/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83/repeatedCharacter.go)<br>
 ```go
 // 题解思路1：总共就26个字母，利用ASCII码表，统计每次字母字符出现的次数。
 
@@ -36,6 +37,7 @@ func repeatedCharacter(s string) byte {
 }
 ```
 [LeeCode 3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)<br>
+- [无重复字符的最长子串 lengthOfLongestSubstring.go](https://github.com/heshaofeng1991/tools/blob/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83/lengthOfLongestSubstring.go)<br>
 ```go
 func lengthOfLongestSubstring(s string) int {
 	res := 0
@@ -85,6 +87,7 @@ func lengthOfLongestSubstring2(s string) int {
 }
 ```
 [LeeCode 1801. 积压订单中的订单总数](https://leetcode.cn/problems/number-of-orders-in-the-backlog/)<br>
+- [积压订单中的订单总数 getNumberOfBacklogOrders.go](https://github.com/heshaofeng1991/tools/blob/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83/getNumberOfBacklogOrders.go)<br>
 ```go
 type pair struct{ price, left int }
 type buy []pair
@@ -157,6 +160,7 @@ func getNumberOfBacklogOrders(orders [][]int) (ans int) {
 ```
 
 [LeeCode 2042. 检查句子中的数字是否递增](https://leetcode.cn/problems/check-if-numbers-are-ascending-in-a-sentence/)<br>
+- [检查句子中的数字是否递增 areNumbersAscending.go](https://github.com/heshaofeng1991/tools/blob/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83/areNumbersAscending.go)<br>
 ```go
 func areNumbersAscending(s string) bool {
 	str := make([]string, 0)
@@ -205,4 +209,45 @@ func containsDuplicate(nums []int) bool {
 
 	return false
 }
+```
+[1802. 有界数组中指定下标处的最大值](https://leetcode.cn/problems/maximum-value-at-a-given-index-in-a-bounded-array/)<br>
+- [有界数组中指定下标处的最大值 maxValue.go]()<br>
+```go
+func maxValue(n int, index int, maxSum int) int {
+	sum := func(x, cnt int) int {
+		if x >= cnt {
+			return (x*2 - cnt + 1) * cnt / 2
+		}
+
+		return (x+1)*x/2 + cnt - x
+	}
+
+	// sort.Search 使用二分查找查找并返回最小的索引 i
+	return sort.Search(maxSum, func(x int) bool {
+		x++
+
+		return sum(x-1, index)+sum(x, n-index) > maxSum
+	})
+}
+```
+[1803. 统计异或值在范围内的数对有多少](https://leetcode.cn/problems/count-pairs-with-xor-in-a-range/) <br>
+ - [countPairs]()<br>
+```go
+func countPairs(nums []int, low int, high int) int {
+	length := len(nums)
+	i, j, x, result := 0, 0, 0, 0
+
+	for i = 0; i < length; i++ {
+		for j = i + 1; j < length; j++ {
+			x = nums[i] ^ nums[j]
+
+			if x >= low && x <= high {
+				result++
+			}
+		}
+	}
+
+	return result
+}
+
 ```

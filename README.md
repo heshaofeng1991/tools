@@ -141,9 +141,15 @@
 - JSON To Go
 - Go Struct To JSON
 ## LeeCode
-[华为机试](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E5%8D%8E%E4%B8%BA)<br>
-[LeeCode 每日一练](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83)<br>
-[LeeCode 字节](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E5%AD%97%E8%8A%82)<br>
+- [华为机试](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E5%8D%8E%E4%B8%BA)<br>
+- [LeeCode 每日一练](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%BB%83)<br>
+- [LeeCode 字节](https://github.com/heshaofeng1991/tools/tree/master/leecode/%E5%AD%97%E8%8A%82)<br>
+- [微软]()<br>
+- [谷歌]()<br>
+- [百度]()<br>
+- [腾讯]()<br>
+- [阿里巴巴]()<br>
+- [...]()<br>
 ## 区块链
 ## 其它
 - [common 通用服务公共代码](https://github.com/heshaofeng1991/common) <br>
@@ -164,7 +170,7 @@
     - elasticsearch
   - errors
   - response
-- [pay](https://github.com/heshaofeng1991/pay-service) <br>
+- [pay-service](https://github.com/heshaofeng1991/pay-service) <br>
   - 工厂模式实现支持多种支付（简单demo） 
 
     
