@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b791c65-1fca-4d03-acb0-68094fe673a9" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proto-gen-code/proto/gen.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proto-gen-code/proto/web/web.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ddd-johnny" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-johnny" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddd-johnny/domain/announcements/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/ddd-johnny/domain/announcements/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto-gen-code/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/proto-gen-code/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto-gen-code/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/proto-gen-code/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto-gen-code/proto/go-install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/proto-gen-code/proto/go-install.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +28,7 @@
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/proto-gen-code" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,7 +51,7 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/admin/go/src/tools/proto-gen-code/proto",
+    "last_opened_file_path": "/Users/admin/go/src/tools/proto-gen-code/proto/web",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -55,6 +60,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/proto-gen-code/proto/web" />
+      <recent name="$PROJECT_DIR$/proto-gen-code" />
       <recent name="$PROJECT_DIR$/proto-gen-code/proto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
