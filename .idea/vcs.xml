@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api-documentation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ddd-goa-ent-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ddd-johnny" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ddd-sample" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/goa.design-practice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/orm/entgo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pay-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/proto-gen-code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/protoc-gen-go-http" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/代码生成/ogen" vcs="Git" />
+  </component>
+</project>
